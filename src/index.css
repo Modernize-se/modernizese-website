@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Source+Code+Pro:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,87 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-modern-bg text-modern-text font-open-sans antialiased;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-semibold;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[1400px] mx-auto px-4 md:px-8 py-16 md:py-24;
+  }
+
+  .glassmorphism {
+    @apply bg-modern-bg/80 backdrop-blur-md border-b border-modern-accent/10;
+  }
+
+  .cta-button {
+    @apply bg-modern-accent text-modern-bg font-semibold py-3 px-8 rounded-full 
+    transition-all duration-300 hover:bg-modern-accent/90 hover:scale-[1.03] 
+    hover:shadow-[0_0_15px_rgba(0,255,255,0.5)] focus:outline-none focus:ring-2 
+    focus:ring-modern-accent/50;
+  }
+
+  .secondary-button {
+    @apply border border-modern-accent text-modern-accent font-semibold py-3 px-8 
+    rounded-full transition-all duration-300 hover:bg-modern-accent/10 
+    hover:border-modern-accent/80 focus:outline-none focus:ring-2 focus:ring-modern-accent/50;
+  }
+
+  .card {
+    @apply bg-modern-darkbg/80 backdrop-blur-sm border border-modern-text-subtle/10
+    rounded-lg overflow-hidden transition-all duration-300 hover:border-modern-accent/30
+    hover:shadow-[0_0_15px_rgba(0,255,255,0.15)];
+  }
+  
+  .service-card {
+    @apply card p-6 h-full cursor-pointer;
+  }
+  
+  .service-card.active {
+    @apply border-modern-accent/50 shadow-[0_0_20px_rgba(0,255,255,0.2)];
+  }
+
+  .particle {
+    @apply absolute rounded-full bg-modern-accent/20 animate-particle-move;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-modern-text relative 
+    inline-block after:content-[''] after:absolute after:-bottom-2 md:after:-bottom-3 
+    after:left-0 after:w-1/3 after:h-[3px] after:bg-modern-accent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Particles animation */
+@keyframes float-particle {
+  0% { transform: translate(0, 0); opacity: 0.2; }
+  25% { opacity: 0.5; }
+  50% { transform: translate(var(--x), var(--y)); opacity: 0.8; }
+  75% { opacity: 0.5; }
+  100% { transform: translate(0, 0); opacity: 0.2; }
+}
+
+.particle {
+  animation: float-particle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
 }

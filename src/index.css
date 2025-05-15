@@ -123,9 +123,9 @@
   }
 
   .card {
-    @apply bg-modern-darkbg/80 backdrop-blur-sm border border-modern-text-subtle/10
+    @apply bg-modern-darkbg/80 backdrop-blur-sm border-modern-text-subtle/10
     rounded-lg overflow-hidden transition-all duration-300 hover:border-modern-accent/30
-    hover:shadow-[0_0_15px_rgba(0,255,255,0.15)];
+    hover:shadow-[0_0_15px_rgba(0,255,255,0.15)] border;
   }
   
   .service-card {

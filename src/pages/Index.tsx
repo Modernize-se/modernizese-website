@@ -8,7 +8,6 @@ import FoundersSection from '@/components/FoundersSection';
 import ImpactSection from '@/components/ImpactSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 
 const Index: React.FC = () => {
   // Intersection Observer to animate elements on scroll
@@ -31,27 +30,15 @@ const Index: React.FC = () => {
   }, []);
   
   return (
-    <div className="min-h-screen text-modern-text relative">
-      {/* Background geometric effect */}
-      <div className="fixed inset-0 w-full h-full z-0">
-        <HeroGeometric 
-          badge="Modernize-se"
-          title1=""
-          title2=""
-        />
-      </div>
-      
-      {/* Main content with higher z-index */}
-      <div className="relative z-10">
-        <Navbar />
-        <HeroSection />
-        <EdgeSection />
-        <CapabilitiesSection />
-        <FoundersSection />
-        <ImpactSection />
-        <ContactSection />
-        <Footer />
-      </div>
+    <div className="min-h-screen text-modern-text">
+      <Navbar />
+      <HeroSection />
+      <EdgeSection />
+      <CapabilitiesSection />
+      <FoundersSection />
+      <ImpactSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };

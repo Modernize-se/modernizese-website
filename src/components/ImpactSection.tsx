@@ -10,10 +10,10 @@ const ImpactSection: React.FC = () => {
         "Reduced operational expenses for a global logistics firm through process automation and optimization.",
     },
     {
-      statistic: "99.99%",
-      title: "Uptime During Migration",
+      statistic: "10x",
+      title: "Data Accuracy Improvement",
       description:
-        "Maintained near-perfect uptime during a complex cloud migration for a financial institution.",
+        "Improved data accuracy for identifying assets, transactions and investment holdings, with 99.9% automated processes.",
     },
     {
       statistic: "15%",
@@ -45,14 +45,6 @@ const ImpactSection: React.FC = () => {
               <p className="text-modern-text-muted mb-4">
                 {impact.description}
               </p>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center text-modern-accent hover:text-modern-accent-muted transition-colors"
-              >
-                <span className="mr-1">Learn more</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
             </div>
           ))}
         </div>

@@ -9,8 +9,8 @@ const FoundersSection: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
       quote:
-        "Technology should be the catalyst for business evolution, not just a support system.",
-      bio: "With over 15 years in enterprise architecture and AI solutions, Mauro specializes in building tech that speaks your business language — not just code.",
+        "Business leaders should spend their resources on what they do best, and let technology do the rest.",
+      bio: "With over 8 years in enterprise architecture, web development and financial markets, Mauro specializes in building tech that speaks your business language — not just code.",
       linkedin: "#",
     },
     {
@@ -20,7 +20,7 @@ const FoundersSection: React.FC = () => {
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80",
       quote:
         "Strategic vision combined with technical excellence creates transformative business outcomes.",
-      bio: "Ana brings over a decade of experience in business integration and growth strategy. She ensures every solution is grounded in business value, not buzzwords.",
+      bio: "Ana brings over a 5 years of experience in healthcare solutions and growth strategy. She ensures every solution is grounded in business value, not buzzwords.",
       linkedin: "#",
     },
   ];

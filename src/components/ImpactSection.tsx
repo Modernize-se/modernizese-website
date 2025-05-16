@@ -63,7 +63,7 @@ const ImpactSection: React.FC = () => {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            👉 Book a Free Consultation
+            Book a Free Consultation
           </a>
         </div>
       </div>

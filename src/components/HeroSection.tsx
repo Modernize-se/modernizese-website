@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
             }}
             className="cta-button inline-block"
           >
-            👉 Start Your Transformation
+            Start Your Transformation
           </a>
         </div>
       </div>

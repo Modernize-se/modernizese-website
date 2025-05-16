@@ -9,7 +9,7 @@ const FoundersSection: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
       quote:
-        "Business leaders should spend their resources on what they do best, and let technology do the rest.",
+        "Business leaders should spend their resources on what they do best, and let computers do the rest.",
       bio: "With over 8 years in enterprise architecture, web development and financial markets, Mauro specializes in building tech that speaks your business language — not just code.",
       linkedin: "#",
     },

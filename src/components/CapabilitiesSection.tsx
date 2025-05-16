@@ -68,7 +68,7 @@ const CapabilitiesSection: React.FC = () => {
   ];
 
   return (
-    <section id="capabilities" className="py-20 md:py-24">
+    <section id="capabilities" className="py-12 md:py-24">
       <div className="section-container">
         <h2 className="section-title">
           Core Capabilities: Our Arsenal of Expertise

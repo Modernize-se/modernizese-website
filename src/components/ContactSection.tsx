@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="py-20 md:py-24 bg-gradient-to-b from-modern-darkbg to-modern-bg"
+      className="py-12 md:py-24 bg-gradient-to-b from-modern-darkbg to-modern-bg"
     >
       <div className="section-container max-w-5xl">
         <h2 className="section-title">Connect: Let's Engineer Your Success</h2>

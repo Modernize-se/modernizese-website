@@ -11,16 +11,16 @@ const ContactSection: React.FC = () => {
       className="py-12 md:py-24 bg-gradient-to-b from-modern-darkbg to-modern-bg"
     >
       <div className="section-container max-w-5xl">
-        <h2 className="section-title">Connect: Let's Engineer Your Success</h2>
+        <h2 className="section-title">
+          Let's Build the Right Solution for Your Business
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Innovate? Let's Talk.
-            </h3>
+            <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
             <p className="text-modern-text-muted mb-6">
-              Partner with Modernize-se to redefine your technological
-              landscape. Reach out for a confidential consultation.
+              We're ready to discuss your business challenges and how our
+              technology solutions can help overcome them.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -43,14 +43,14 @@ const ContactSection: React.FC = () => {
 
             <div className="border border-modern-text-subtle/30 rounded-lg p-6 bg-modern-darkbg/50 backdrop-blur-sm">
               <h4 className="text-lg font-semibold mb-2 text-modern-accent">
-                We'll help you
+                Our Values
               </h4>
               <ul className="space-y-3">
                 {[
-                  "Assess your current technological landscape",
-                  "Identify opportunities for innovation",
-                  "Create a roadmap for digital transformation",
-                  "Implement solutions with measurable impact",
+                  "Simplicity – Every tool we build must reduce friction",
+                  "Transparency – No confusing jargon, no vague timelines",
+                  "Tailored Fit – Solutions made to match your needs",
+                  "Results-First – We aim for impact, not just implementation",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
                     <div className="w-1.5 h-1.5 bg-modern-accent rounded-full mr-3"></div>
@@ -89,9 +89,8 @@ const ContactSection: React.FC = () => {
 
               <div className="bg-modern-accent/10 p-4 rounded-md border border-modern-accent/20 mt-6">
                 <p className="text-modern-text text-sm">
-                  Our team of experts is ready to discuss your project
-                  requirements and provide tailored solutions for your business
-                  needs.
+                  Book a free 30-minute consultation to discuss how we can build
+                  the right solution for your business needs.
                 </p>
               </div>
             </div>

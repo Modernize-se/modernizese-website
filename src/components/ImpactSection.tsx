@@ -5,30 +5,28 @@ const ImpactSection: React.FC = () => {
   const impacts = [
     {
       statistic: "30%",
-      title: "Reduced OpEx for Global Logistics Firm",
+      title: "OpEx Reduction",
       description:
-        "Implemented AI-driven route optimization and warehouse automation, resulting in significant operational cost savings.",
+        "Reduced operational expenses for a global logistics firm through process automation and optimization.",
     },
     {
       statistic: "99.99%",
-      title: "Uptime Achieved in Cloud Migration",
+      title: "Uptime During Migration",
       description:
-        "Navigated a complex cloud migration for a financial services client with zero business disruption.",
+        "Maintained near-perfect uptime during a complex cloud migration for a financial institution.",
     },
     {
       statistic: "15%",
-      title: "Market Share Growth",
+      title: "Market Share Increase",
       description:
-        "Pioneered a bespoke AI solution for a retail client, revolutionizing their customer personalization capabilities.",
+        "Helped a client grow their market share through AI-based personalization technology.",
     },
   ];
 
   return (
     <section id="impact" className="py-12 md:py-24">
       <div className="section-container">
-        <h2 className="section-title">
-          Impact Delivered: Transforming Businesses
-        </h2>
+        <h2 className="section-title">Results That Speak for Themselves</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {impacts.map((impact, index) => (
@@ -61,7 +59,7 @@ const ImpactSection: React.FC = () => {
 
         <div className="mt-16 text-center">
           <p className="text-modern-text-muted mb-6">
-            Ready to achieve similar results for your organization?
+            Want to see similar results in your organization?
           </p>
           <a
             href="#contact"
@@ -73,7 +71,7 @@ const ImpactSection: React.FC = () => {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Start Your Transformation
+            👉 Book a Free Consultation
           </a>
         </div>
       </div>

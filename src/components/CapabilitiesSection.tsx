@@ -1,68 +1,56 @@
 import React, { useState } from "react";
-import { Brain, Cloud, FileCode, Users, Star } from "lucide-react";
+import { LayoutGrid, Database, Code, BrainCircuit } from "lucide-react";
 
 const CapabilitiesSection: React.FC = () => {
-  const [activeService, setActiveService] = useState("ai");
+  const [activeService, setActiveService] = useState("automation");
 
   const services = [
     {
-      id: "ai",
-      icon: <Brain className="w-10 h-10 text-modern-accent" />,
-      title: "AI & Machine Learning",
+      id: "automation",
+      icon: <LayoutGrid className="w-10 h-10 text-modern-accent" />,
+      title: "Process Automation",
       description:
-        "Harness the power of artificial intelligence to automate processes, gain predictive insights, and create smarter systems.",
+        "Save time, reduce errors, and free your team from repetitive tasks with smart automated workflows.",
       capabilities: [
-        "Custom AI Model Development",
-        "Machine Learning Integration",
-        "NLP & Computer Vision Solutions",
+        "Workflow Automation",
+        "Document Processing",
+        "Task Management",
       ],
     },
     {
-      id: "cloud",
-      icon: <Cloud className="w-10 h-10 text-modern-accent" />,
-      title: "Cloud Architecture",
+      id: "data",
+      icon: <Database className="w-10 h-10 text-modern-accent" />,
+      title: "Data Integration & Cleanup",
       description:
-        "Build scalable, secure, and cost-effective cloud infrastructure tailored to your business needs.",
+        "Organize your business insights in one place with consolidated, clean data that drives decision-making.",
       capabilities: [
-        "Cloud Migration Strategy",
-        "Multi-Cloud Management",
-        "Cloud-Native Application Development",
+        "Data Consolidation",
+        "Data Cleansing",
+        "Dashboard Creation",
       ],
     },
     {
       id: "software",
-      icon: <FileCode className="w-10 h-10 text-modern-accent" />,
-      title: "Custom Software Development",
+      icon: <Code className="w-10 h-10 text-modern-accent" />,
+      title: "Custom Software",
       description:
-        "Create bespoke software solutions that perfectly align with your business processes and goals.",
+        "Solutions built around your reality, not a generic platform that forces you to change how you work.",
       capabilities: [
-        "Enterprise Application Development",
-        "Legacy System Modernization",
-        "Mobile & Web Solutions",
+        "Bespoke Applications",
+        "System Modernization",
+        "Process-Oriented Design",
       ],
     },
     {
-      id: "digital",
-      icon: <Star className="w-10 h-10 text-modern-accent" />,
-      title: "Digital Transformation",
+      id: "ai",
+      icon: <BrainCircuit className="w-10 h-10 text-modern-accent" />,
+      title: "AI Applications",
       description:
-        "Reimagine your business processes and customer experiences through strategic digital initiatives.",
+        "Practical, no-hype artificial intelligence that makes a real difference in your business outcomes.",
       capabilities: [
-        "Digital Strategy Consulting",
-        "Process Automation",
-        "Innovation Roadmapping",
-      ],
-    },
-    {
-      id: "team",
-      icon: <Users className="w-10 h-10 text-modern-accent" />,
-      title: "Team Augmentation",
-      description:
-        "Enhance your technical capabilities with our expert consultants who integrate seamlessly with your team.",
-      capabilities: [
-        "Specialized Tech Talent",
-        "Project-Based Consulting",
-        "Knowledge Transfer & Training",
+        "Predictive Analytics",
+        "Natural Language Processing",
+        "Intelligent Automation",
       ],
     },
   ];
@@ -71,22 +59,20 @@ const CapabilitiesSection: React.FC = () => {
     <section id="capabilities" className="py-12 md:py-24">
       <div className="section-container">
         <h2 className="section-title">
-          Core Capabilities: Our Arsenal of Expertise
+          From Task Automation to Full System Transformation
         </h2>
         <p className="text-lg mb-12 max-w-3xl">
-          Services tailored for peak performance. We offer comprehensive
-          solutions across multiple domains to address your most complex
-          technological challenges.
+          We build practical solutions that solve real business problems, from
+          simple automations to complete digital transformations.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {services.map((service, index) => (
             <button
               key={service.id}
               onClick={() => setActiveService(service.id)}
               className={`flex flex-col items-center p-4 rounded-lg transition-all duration-300 border 
                 hover:shadow-[0_0_12px_rgba(0,255,255,0.3)] hover:scale-105
-                ${index === 4 ? "col-span-2 mx-auto w-[calc(50%-0.5rem)]" : ""}
                 ${
                   activeService === service.id
                     ? "bg-modern-darkbg border-modern-accent/30 shadow-[0_0_12px_rgba(0,255,255,0.3)] scale-105"

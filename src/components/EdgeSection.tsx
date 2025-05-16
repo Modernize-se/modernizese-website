@@ -1,63 +1,50 @@
 import React from "react";
-import { Check, Brain, Layers, FileChartColumn } from "lucide-react";
+import { User, BriefcaseBusiness, Clock } from "lucide-react";
 
 const EdgeSection: React.FC = () => {
-  const differentiators = [
+  const attributes = [
     {
       icon: (
-        <Brain className="w-12 h-12 text-modern-accent animate-pulse-glow" />
+        <User className="w-12 h-12 text-modern-accent animate-pulse-glow" />
       ),
-      title: "Deep Tech Acumen",
+      title: "Business Decision-Makers",
       description:
-        "Our team consists of industry veterans with specialized knowledge in cutting-edge technologies and methodologies.",
+        "Our clients are leaders focused on growth, not technical details.",
     },
     {
       icon: (
-        <Layers className="w-12 h-12 text-modern-accent animate-pulse-glow" />
+        <BriefcaseBusiness className="w-12 h-12 text-modern-accent animate-pulse-glow" />
       ),
-      title: "Strategic Co-Creation",
+      title: "Operational Challenges",
       description:
-        "We don't just consult - we collaborate closely to build solutions that perfectly align with your business objectives.",
+        "Systems that no longer serve your growing needs or are causing bottlenecks.",
     },
     {
       icon: (
-        <FileChartColumn className="w-12 h-12 text-modern-accent animate-pulse-glow" />
+        <Clock className="w-12 h-12 text-modern-accent animate-pulse-glow" />
       ),
-      title: "Future-Proof Solutions",
+      title: "Efficiency-Focused",
       description:
-        "Our solutions are built with scalability and adaptability in mind, ensuring long-term value for your investment.",
+        "Leaders who value their team's time and want to eliminate unnecessary manual tasks.",
     },
-  ];
-
-  const principles = [
-    "Proactive Innovation",
-    "Founder-Led Expertise",
-    "Measurable Impact",
   ];
 
   return (
     <section id="edge" className="py-12 md:py-24 bg-modern-darkbg">
       <div className="section-container">
-        <h2 className="section-title">Our Edge: Modernize-se Difference</h2>
+        <h2 className="section-title">
+          Built for Decision-Makers, Not Developers
+        </h2>
 
         <p className="text-lg mb-12 max-w-3xl">
-          At Modernize-se, we don't just advise; we build, integrate, and
-          elevate. Our methodology is rooted in
-          {principles.map((principle, index) => (
-            <span
-              key={principle}
-              className="relative inline-flex items-center mx-1"
-            >
-              <span className="text-modern-accent font-medium">
-                {principle}
-              </span>
-              {index < principles.length - 1 ? ", " : "."}
-            </span>
-          ))}
+          Our clients are business leaders — not engineers. You know your
+          systems are holding you back, but you don't have time to explore every
+          tool or buzzword. That's where we come in. We translate business
+          problems into powerful, easy-to-manage technology.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {differentiators.map((item, index) => (
+        <div className="grid md:grid-cols-3 gap-8">
+          {attributes.map((item, index) => (
             <div
               key={item.title}
               className="card p-6 opacity-0 animate-fade-in-up"
@@ -69,25 +56,6 @@ const EdgeSection: React.FC = () => {
                   {item.title}
                 </h3>
                 <p className="text-modern-text-muted">{item.description}</p>
-
-                <ul className="mt-4 space-y-2 text-left">
-                  {Array(3)
-                    .fill(0)
-                    .map((_, i) => (
-                      <li key={i} className="flex items-center">
-                        <Check className="w-4 h-4 text-modern-accent mr-2" />
-                        <span className="text-sm text-modern-text-muted">
-                          {
-                            [
-                              "Proven methodology",
-                              "Industry expertise",
-                              "Tailored solutions",
-                            ][i]
-                          }
-                        </span>
-                      </li>
-                    ))}
-                </ul>
               </div>
             </div>
           ))}

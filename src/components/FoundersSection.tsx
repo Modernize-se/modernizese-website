@@ -1,5 +1,5 @@
 import React from "react";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Building, FileCheck, Users } from "lucide-react";
 
 const FoundersSection: React.FC = () => {
   const founders = [
@@ -10,7 +10,7 @@ const FoundersSection: React.FC = () => {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
       quote:
         "Technology should be the catalyst for business evolution, not just a support system.",
-      bio: "With over 15 years in enterprise architecture and AI solutions, Mauro has led digital transformations for Fortune 500 companies. His expertise spans machine learning, cloud infrastructure, and emerging technologies.",
+      bio: "With over 15 years in enterprise architecture and AI solutions, Mauro specializes in building tech that speaks your business language — not just code.",
       linkedin: "#",
     },
     {
@@ -20,15 +20,64 @@ const FoundersSection: React.FC = () => {
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80",
       quote:
         "Strategic vision combined with technical excellence creates transformative business outcomes.",
-      bio: "Ana brings 12+ years of experience in business strategy and technology integration. Her background in enterprise software and digital innovation has helped numerous organizations achieve sustainable growth through technology.",
+      bio: "Ana brings over a decade of experience in business integration and growth strategy. She ensures every solution is grounded in business value, not buzzwords.",
       linkedin: "#",
+    },
+  ];
+
+  const experience = [
+    {
+      icon: <Building className="w-12 h-12 text-modern-accent" />,
+      title: "Business Consultancy",
+      description:
+        "We understand operations, workflows, and organizational challenges.",
+    },
+    {
+      icon: <FileCheck className="w-12 h-12 text-modern-accent" />,
+      title: "Finance & Healthcare",
+      description:
+        "Experience with regulated industries and complex compliance requirements.",
+    },
+    {
+      icon: <Users className="w-12 h-12 text-modern-accent" />,
+      title: "Collaborative Approach",
+      description:
+        "Every project is founder-led and deeply collaborative with your team.",
     },
   ];
 
   return (
     <section id="founders" className="py-12 md:py-28 bg-modern-darkbg/70">
       <div className="section-container">
-        <h2 className="section-title">The Founders: Visionaries at the Helm</h2>
+        <h2 className="section-title">We've Been Where You Are</h2>
+
+        <p className="text-lg mb-12 max-w-3xl">
+          With a background in business consultancy, finance, and healthcare, we
+          understand more than just code — we understand operations, people, and
+          results. Every project is founder-led and deeply collaborative.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {experience.map((item, index) => (
+            <div
+              key={item.title}
+              className="card p-6 opacity-0 animate-fade-in-up"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-3 text-modern-text">
+                  {item.title}
+                </h3>
+                <p className="text-modern-text-muted">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-2xl font-bold mb-8 text-center">
+          Meet Our Founders
+        </h3>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {founders.map((founder, index) => (

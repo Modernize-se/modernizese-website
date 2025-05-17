@@ -38,9 +38,6 @@ jobs:
       - name: 🏗️ Build site
         run: npm run build
 
-      - name: 🧾 Add CNAME file to dist
-        run: cp public/CNAME dist/CNAME
-
       - name: ⚙️ Setup Pages
         uses: actions/configure-pages@v4
 

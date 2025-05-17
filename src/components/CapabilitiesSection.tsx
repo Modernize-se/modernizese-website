@@ -59,7 +59,7 @@ const CapabilitiesSection: React.FC = () => {
     <section id="capabilities" className="py-12 md:py-24">
       <div className="section-container">
         <h2 className="section-title">
-          From Task Automation to Full System Transformation
+          From task automation to full system transformation
         </h2>
         <p className="text-lg mb-12 max-w-3xl">
           We build practical solutions that solve real business problems, from

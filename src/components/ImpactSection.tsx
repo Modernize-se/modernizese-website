@@ -26,7 +26,7 @@ const ImpactSection: React.FC = () => {
   return (
     <section id="impact" className="py-12 md:py-24">
       <div className="section-container">
-        <h2 className="section-title">Results That Speak for Themselves</h2>
+        <h2 className="section-title">Results that speak for themselves</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {impacts.map((impact, index) => (

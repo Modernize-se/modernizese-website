@@ -75,13 +75,17 @@ const HeroSection: React.FC = () => {
 
       <div className="section-container z-10 text-center max-w-4xl">
         <h1 className="opacity-0 animate-fade-in-up [animation-delay:300ms] text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Modernize Your Business Through
-          <span className="text-modern-accent"> Smart Technology</span>
+          Modernize your business with
+          <span className="text-modern-accent">
+            {" "}
+            the most suitable solution
+          </span>{" "}
+          for your needs
         </h1>
 
         <p className="opacity-0 animate-fade-in-up [animation-delay:700ms] text-modern-text-muted max-w-2xl mx-auto text-lg mb-10">
           Custom-built solutions that simplify operations, integrate data, and
-          fuel growth — all tailored to your business needs.
+          fuel growth. All tailored to your business needs.
         </p>
 
         <div className="opacity-0 animate-fade-in-up [animation-delay:1000ms]">

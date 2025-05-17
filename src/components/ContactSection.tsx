@@ -12,7 +12,7 @@ const ContactSection: React.FC = () => {
     >
       <div className="section-container max-w-5xl">
         <h2 className="section-title">
-          Let's Build the Right Solution for Your Business
+          Let's build the right solution for your business
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">

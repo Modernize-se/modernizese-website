@@ -27,21 +27,21 @@ const EdgeSection: React.FC = () => {
     <section id="edge" className="py-12 md:py-24 bg-modern-darkbg">
       <div className="section-container">
         <h2 className="section-title">
-          Built for Decision-Makers, Not Developers
+          Built for decision-makers, not developers
         </h2>
 
         <p className="text-lg mb-12 max-w-3xl">
-          Our clients are business leaders — not engineers. You know your
-          systems are holding you back, but you don't have time to explore every
-          tool or buzzword. That's where we come in. We translate business
-          problems into powerful, easy-to-manage technology.
+          Our clients are business leaders. You know your systems are holding
+          you back, but you don't have time to explore every tool or buzzword.
+          That's where we come in. We translate business problems into powerful,
+          easy-to-manage technology.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
           {attributes.map((item, index) => (
             <div
               key={item.title}
-              className="card p-6 opacity-0 animate-fade-in-up hover:animate-pulse-glow transition-all duration-300"
+              className="card p-6 opacity-0 animate-fade-in-up border border-transparent transition-all duration-300 hover:shadow-[0_0_12px_rgba(0,255,255,0.3)] hover:scale-105 hover:border-modern-accent/30 hover:bg-modern-darkbg/50"
               style={{ animationDelay: `${(index + 1) * 200}ms` }}
             >
               <div className="flex flex-col items-center text-center">

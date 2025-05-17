@@ -4,24 +4,22 @@ import { Linkedin, Building, FileCheck, Users } from "lucide-react";
 const FoundersSection: React.FC = () => {
   const founders = [
     {
-      name: "Mauro L. S. Moura",
-      title: "Co-Founder & Lead Technologist",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
+      name: "Mauro Moura",
+      title: "Co-Founder & Technical Lead",
+      image: "https://i.postimg.cc/vZm2fNmx/mauro-round.png",
       quote:
         "Business leaders should spend their resources on what they do best, and let computers do the rest.",
-      bio: "With over 8 years in enterprise architecture, web development and financial markets, Mauro specializes in building tech that speaks your business language — not just code.",
-      linkedin: "#",
+      bio: `With over ${new Date().getFullYear() - 2017} years in enterprise architecture, web development and financial markets, Mauro specializes in building tech that speaks your business language — not just code.`,
+      linkedIn: "https://www.linkedin.com/in/maurolsmoura/",
     },
     {
       name: "Ana Carolina",
       title: "Co-Founder & Chief Strategist",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80",
+      image: "https://i.postimg.cc/wxsvVmHT/carol-rounded.png",
       quote:
         "Strategic vision combined with technical excellence creates transformative business outcomes.",
-      bio: "Ana brings over a 5 years of experience in healthcare solutions and growth strategy. She ensures every solution is grounded in business value, not buzzwords.",
-      linkedin: "#",
+      bio: `Ana brings over ${new Date().getFullYear() - 2015} years of experience in healthcare solutions and growth strategy. She ensures every solution is grounded in business value, not buzzwords.`,
+      linkedIn: "https://www.linkedin.com/in/anacarolinafarias/",
     },
   ];
 
@@ -49,7 +47,7 @@ const FoundersSection: React.FC = () => {
   return (
     <section id="founders" className="py-12 md:py-28 bg-modern-darkbg/70">
       <div className="section-container">
-        <h2 className="section-title">We've Been Where You Are</h2>
+        <h2 className="section-title">We've been where you are</h2>
 
         <p className="text-lg mb-12 max-w-3xl">
           With a background in business consultancy, finance, and healthcare, we
@@ -76,7 +74,7 @@ const FoundersSection: React.FC = () => {
         </div>
 
         <h3 className="text-2xl font-bold mb-8 text-center">
-          Meet Our Founders
+          Meet our founders
         </h3>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
@@ -87,11 +85,11 @@ const FoundersSection: React.FC = () => {
               style={{ animationDelay: `${index * 300}ms` }}
             >
               <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                <div className="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-lg border-2 border-modern-accent/30">
+                <div className="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-2 border-modern-accent/30">
                   <img
                     src={founder.image}
                     alt={founder.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover grayscale"
                   />
                 </div>
 
@@ -110,8 +108,10 @@ const FoundersSection: React.FC = () => {
                   </p>
 
                   <a
-                    href={founder.linkedin}
+                    href={founder.linkedIn}
                     className="inline-flex items-center text-modern-accent hover:text-modern-accent-muted transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Linkedin className="w-4 h-4 mr-2" />
                     <span className="text-sm">View LinkedIn Profile</span>

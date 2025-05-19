@@ -6,7 +6,7 @@ const FoundersSection: React.FC = () => {
     {
       name: "Mauro Moura",
       title: "Co-Founder & Technical Lead",
-      image: "https://i.postimg.cc/vZm2fNmx/mauro-round.png",
+      image: "/mauro.png",
       quote:
         "Business leaders should spend their resources on what they do best, and let computers do the rest.",
       bio: `With over ${new Date().getFullYear() - 2017} years in enterprise architecture, web development and financial markets, Mauro specializes in building tech that speaks your business language — not just code.`,
@@ -15,7 +15,7 @@ const FoundersSection: React.FC = () => {
     {
       name: "Ana Carolina",
       title: "Co-Founder & Chief Strategist",
-      image: "https://i.postimg.cc/wxsvVmHT/carol-rounded.png",
+      image: "/carol.png",
       quote:
         "Strategic vision combined with technical excellence creates transformative business outcomes.",
       bio: `Ana brings over ${new Date().getFullYear() - 2015} years of experience in healthcare solutions and growth strategy. She ensures every solution is grounded in business value, not buzzwords.`,

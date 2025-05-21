@@ -13,7 +13,7 @@ const FoundersSection: React.FC = () => {
       linkedIn: "https://www.linkedin.com/in/maurolsmoura/",
     },
     {
-      name: "Ana Carolina",
+      name: "Ana Carolina Farias",
       title: "Co-Founder & Chief Strategist",
       image: "/carol.png",
       quote:
